@@ -26,7 +26,7 @@ public class JwtAuthenticationResource {
 
 	private String createToken(Authentication authentication) {
 		var claims = JwtClaimsSet.builder()
-								.issuer("self")
+								.issuer("Anwin-kuruvila")
 								.issuedAt(Instant.now())
 								.expiresAt(Instant.now().plusSeconds(60))
 								.subject(authentication.getName())
